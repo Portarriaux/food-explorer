@@ -8,6 +8,7 @@ import LogoImage from "../../assets/logo.png";
 export function SignUp() {
   return (
     <Container>
+
       <Form>
         <Header imageUrl={LogoImage} title="food Explorer" />
         <Input

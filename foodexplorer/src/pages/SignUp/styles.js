@@ -12,6 +12,8 @@ export const Form = styled.form`
   padding: 37rem 5.6rem;
 
 
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
