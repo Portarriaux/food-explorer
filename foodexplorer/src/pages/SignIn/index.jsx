@@ -26,8 +26,6 @@ export function SignIn () {
 
                 <Button title=" Entrar" />
                 <ButtonText title="Criar Conta" />
-
-
             </Form>
         </Container>
     )
