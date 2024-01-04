@@ -1,32 +1,35 @@
-import { Container, Form } from "./styles";
-import { Header } from "../../components/Header"
-import { Input } from "../../components/Input"
-import { Button } from "../../components/Button"
-import { ButtonText } from "../../components/ButtonText"
-import  LogoImage  from "../../assets/logo.png"
+import { Container, Form, LogoAndHeader } from "./styles";
+import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
+import logo from "../../assets/logo.png";
 
-export function SignIn () {
-    return (
-        <Container>
-            <Form>
-                <Header imageUrl={LogoImage} title="food Expoler" />
-                <Input 
-                    label="Nome"
-                    placeholder="Exemplo: Maria Da Silva"
-                    type="text"
-                    id="name"
-                />
+export function SignIn() {
+  return (
+    <Container>
+      <Form>
+        <LogoAndHeader>
+              <img src={logo} alt="Logo da aplicação" />
+            <h1>fodd Explorer</h1>
+        </LogoAndHeader> 
 
-                <Input 
-                    label="Senha" 
-                    placeholder= "No mínimo 6 caracteres"
-                    type="password"
-                    id="password"
-                />
+        <Input
+          label="Nome"
+          placeholder="Exemplo: Maria Da Silva"
+          type="text"
+          id="name"
+        />
 
-                <Button title=" Entrar" />
-                <ButtonText title="Criar Conta" />
-            </Form>
-        </Container>
-    )
+        <Input
+          label="Senha"
+          placeholder="No mínimo 6 caracteres"
+          type="password"
+          id="password"
+        />
+
+        <Button title=" Entrar" />
+        <ButtonText title="Criar Conta" />
+      </Form>
+    </Container>
+  );
 }

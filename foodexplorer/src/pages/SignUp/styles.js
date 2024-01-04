@@ -6,13 +6,26 @@ export const Container = styled.div`
   height: 100vh;
 `;
 
+export const LogoAndHeader = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 7.3rem;
+  margin-right: 6rem;
+  gap: 8px;
+
+ 
+
+  > h1 {
+    font-family: "Roboto";
+    font-size: clamp(3.5rem, 2vw, 4rem);
+    font-style: "normal";
+    font-weight: 700px;
+  }
+`;
+
 export const Form = styled.form`
   max-width: 31.6rem;
   margin: 0 auto;
-  padding: 37rem 5.6rem;
-
-
-
 
   display: flex;
   flex-direction: column;
