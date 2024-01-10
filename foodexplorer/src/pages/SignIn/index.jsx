@@ -14,7 +14,7 @@ export function SignIn() {
         </LogoAndHeader>
 
       <Form>
-
+        <h2>Crie sua Conta</h2>
         <Input
           label="Nome"
           placeholder="Exemplo: Maria Da Silva"

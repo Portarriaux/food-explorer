@@ -3,9 +3,9 @@ import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 export const Container = styled.div`
   height: 100vh;
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
     display: flex;
-    margin-left: 15.3rem;
+    align-items: center;
   }
 `;
 
@@ -14,8 +14,7 @@ export const LogoAndHeader = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin-top: 7.3rem;
-  margin-right: 6rem;
+  margin: 7.3rem 6rem 0 0;
 
   gap: 8px;
 
@@ -24,12 +23,13 @@ export const LogoAndHeader = styled.div`
     font-size: clamp(3.5rem, 2vw, 4rem);
     font-style: "normal";
     font-weight: 700;
+    flex-shrink: 0;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
     margin-bottom: 20.5rem;
-    gap: 18px;
-    flex-shrink:0;
+    gap: 10px;
+    padding-left: 10rem;
   }
 `;
 
@@ -41,6 +41,28 @@ export const Form = styled.form`
   justify-content: center;
   align-items: center;
 
-  margin: auto;
+  margin: 0 auto;
   padding-top: 7.3rem;
+
+  > h2 {
+    display: none;
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
+    padding: 6.4rem;
+    margin: 0 auto;
+
+    border-radius: 1.6rem;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
+
+    > h2 {
+      margin-bottom: 3.2rem;
+      display: block;
+
+      font-family: "Poppins";
+      font-size: 3.2rem;
+      font-weight: 500;
+    }
+  }
+
 `;
