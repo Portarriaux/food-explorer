@@ -1,9 +1,9 @@
-import { Container } from "./styles";
+import { Button } from "./styles";
 
 export function ExitButton({ title, ...rest }) {
   return (
-    <Container type="button" {...rest}>
+    <Button type="button" {...rest}>
       {title}
-    </Container>
+    </Button>
   );
 }

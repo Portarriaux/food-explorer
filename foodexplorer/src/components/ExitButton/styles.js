@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
+export const Button = styled.button`
   min-width: 34rem;
 
   padding: 0 0 10px 1rem;
