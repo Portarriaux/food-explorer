@@ -60,9 +60,11 @@ export const Description = styled.div`
 export const CardRef = styled.div`
   display: flex;
 `;
+
 export const CardMain = styled.div`
   display: flex;
 `;
+
 export const CardMainExtra = styled.div`
   display: flex;
 `;

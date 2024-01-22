@@ -5,6 +5,7 @@ export const Container = styled.div`
   max-width: 42.8rem;
   height: 100vh;
 `;
+
 export const HeaderMenu = styled.div`
   display: flex;
   align-items: center;
