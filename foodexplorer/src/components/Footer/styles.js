@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// Alterando Tab.
-
 export const Container = styled.div`
     width: 42.8rem;
     height: 7.7rem;
@@ -10,7 +8,7 @@ export const Container = styled.div`
     align-items: center;
     padding-left: 2rem;
 
-    position: fixed; // Adicionando position para fixar o footer.
+    position: fixed;
     bottom: 0;
 
     gap: 4px;
