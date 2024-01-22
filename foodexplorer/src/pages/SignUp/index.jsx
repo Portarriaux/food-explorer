@@ -7,11 +7,14 @@ import logo from "../../assets/logo.png";
 export function SignUp() {
   return (
     <Container>
+      <LogoAndHeader>
+        <img src={logo} alt="Logo da aplicação" />
+        <h1>fodd Explorer</h1>
+      </LogoAndHeader>
+
       <Form>
-        <LogoAndHeader>
-          <img src={logo} alt="Logo da aplicação" />
-          <h1>fodd Explorer</h1>
-        </LogoAndHeader>
+        <h2>Crie sua conta</h2>
+
         <Input
           label="Nome"
           placeholder="Exemplo: Maria da Silva"
@@ -32,7 +35,6 @@ export function SignUp() {
         />
 
         <Button title="Criar conta" />
-
         <ButtonText title="Já tenho uma conta" />
       </Form>
     </Container>
