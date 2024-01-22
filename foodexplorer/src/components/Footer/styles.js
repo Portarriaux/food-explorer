@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
+// Alterando Tab.
+
 export const Container = styled.div`
-width: 42.8rem;
-height: 7.7rem;
+    width: 42.8rem;
+    height: 7.7rem;
 
-display: flex;
-align-items: center;
-padding-left: 2.0rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
 
-gap: 4px;
-flex-shrink: 0;
+    position: fixed; // Adicionando position para fixar o footer.
+    bottom: 0;
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    gap: 4px;
+    flex-shrink: 0;
+
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   h2 {
     font-family: "Roboto";
