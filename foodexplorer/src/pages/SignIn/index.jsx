@@ -7,14 +7,13 @@ import logo from "../../assets/logo.png";
 export function SignIn() {
   return (
     <Container>
-
-        <LogoAndHeader>
-          <img src={logo} alt="Logo da aplicação" />
-          <h1>food Explorer</h1>
-        </LogoAndHeader>
+      <LogoAndHeader>
+        <img src={logo} alt="Logo da aplicação" />
+        <h1>food Explorer</h1>
+      </LogoAndHeader>
 
       <Form>
-        <h2>Crie sua Conta</h2>
+        <h2>Faça login</h2>
         <Input
           label="Nome"
           placeholder="Exemplo: Maria Da Silva"

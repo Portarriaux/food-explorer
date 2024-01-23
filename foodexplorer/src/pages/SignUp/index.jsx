@@ -1,20 +1,19 @@
-import { Container, Form, LogoAndHeader } from "./styles";
+import { Container, Form, LogoHeader } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/header.Logo.png";
 
 export function SignUp() {
   return (
     <Container>
-      <LogoAndHeader>
+      <LogoHeader>
         <img src={logo} alt="Logo da aplicação" />
         <h1>fodd Explorer</h1>
-      </LogoAndHeader>
+      </LogoHeader>
 
       <Form>
         <h2>Crie sua conta</h2>
-
         <Input
           label="Nome"
           placeholder="Exemplo: Maria da Silva"
@@ -29,7 +28,7 @@ export function SignUp() {
         />
         <Input
           label="Senha"
-          placeholder="No minimo 6 caracteres"
+          placeholder="No mínimo 6 caracteres"
           type="password"
           id="password"
         />
