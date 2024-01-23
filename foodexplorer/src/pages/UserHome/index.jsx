@@ -94,7 +94,7 @@ export function UserHome() {
 
         <DishCard
           icon={PiHeartStraightBold}
-          title="Salada Suco de maracujá"
+          title="Suco de maracujá"
           price={13.97}
           onIncrement={() => {}}
           onDecrement={() => {}}
