@@ -12,6 +12,6 @@ export const Container = styled.button`
   border: none;
   border-radius: 5px;
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
   color: ${({ theme }) => theme.COLORS.WHITE};
 `;
