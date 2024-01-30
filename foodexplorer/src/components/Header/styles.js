@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  max-width: 42.8rem;
+  height: 11.4rem;
+
   display: flex;
   margin: auto;
-  
-  max-width: 42.8rem;;
-  height: 11.4rem;
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 `;
@@ -34,7 +34,7 @@ export const LogoHeader = styled.div`
   gap: 8px;
 
   > h1 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     line-height: normal;
     font-size: 2.1rem;
