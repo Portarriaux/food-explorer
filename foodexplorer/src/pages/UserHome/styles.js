@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
-  max-width: 42.8rem;
   margin: 0 auto;
 `;
 
@@ -18,7 +18,9 @@ export const LogoHome = styled.div`
   );
 
   img {
-    transform: translateY(-20%) translateX(-15%);
+    width: 191px;
+    min-height: 149px;
+    transform: translateY(-20%) translateX(-10%);
   }
 
   .logo-info-home {
@@ -35,12 +37,40 @@ export const LogoHome = styled.div`
     }
 
     p {
-      font-family: "Poppins";
+      font-family: "Roboto";
       font-size: 1.2rem;
       font-style: normal;
       font-weight: 400;
 
       color: ${({ theme }) => theme.COLORS.GRAY_300};
+    }
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
+    min-width: 120rem;
+    height: 26rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 28rem;
+      width: auto;
+
+      transform: translateY(-4%) translateX(-48%);
+    }
+
+    .logo-info-home {
+      h1 {
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
     }
   }
 `;
