@@ -8,7 +8,9 @@ export const Container = styled.div`
 export const LogoHome = styled.div`
   height: 12rem;
   max-width: 39.6rem;
+
   display: flex;
+  align-items: center;
   margin: 4.4rem auto;
 
   background: linear-gradient(
@@ -18,18 +20,16 @@ export const LogoHome = styled.div`
   );
 
   img {
-    width: 191px;
-    min-height: 149px;
-    transform: translateY(-20%) translateX(-10%);
+    width: 19.1rem;
+    min-height: 14.9rem;
+    transform: translateY(-9%) translateX(-10%);
   }
 
   .logo-info-home {
-    align-self: center;
-
     h1 {
       font-family: "Poppins";
-      font-size: 1.8rem;
       font-style: normal;
+      font-size: 1.8rem;
       font-weight: 600;
       margin-bottom: 3px;
 
@@ -38,8 +38,8 @@ export const LogoHome = styled.div`
 
     p {
       font-family: "Roboto";
-      font-size: 1.2rem;
       font-style: normal;
+      font-size: 1.2rem;
       font-weight: 400;
 
       color: ${({ theme }) => theme.COLORS.GRAY_300};
@@ -47,18 +47,17 @@ export const LogoHome = styled.div`
   }
 
   @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
-    min-width: 120rem;
-    height: 26rem;
+    min-width: 110rem;
+    height: 22rem;
 
-    display: flex;
-    justify-content: center;
     align-items: center;
+    margin-top: 10.0rem;
 
     img {
       height: 28rem;
       width: auto;
 
-      transform: translateY(-4%) translateX(-48%);
+      transform: translateY(-10%) translateX(-12%);
     }
 
     .logo-info-home {
@@ -69,14 +68,15 @@ export const LogoHome = styled.div`
       }
 
       p {
-        font-size: 1.6rem;
+        font-size: 2rem;
+        max-width: 38rem;
       }
     }
   }
 `;
 
 export const Description = styled.div`
-  margin-left: 24px;
+  margin-left: 2.4rem;
 
   font-family: "Poppins";
   font-size: 1.8rem;
