@@ -10,16 +10,21 @@ export const Container = styled.div`
 export const Navigate = styled.div`
   display: flex;
   margin: auto;
-  gap: 7rem;
+  gap: 4rem;
 
   @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
-    gap: 15rem;
     display: flex;
+    gap: 20rem;
+  }
+  @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+    gap: 5rem;
+    padding: 0 2.5rem;
   }
 `;
 
 export const Menu = styled.button`
   display: block;
+
   border: none;
   background: transparent;
   color: ${({ theme }) => theme.COLORS.WHITE};
@@ -64,7 +69,7 @@ export const SearchBarInput = styled.input`
     font-family: "Roboto";
     font-size: 1.6rem;
     font-weight: 400;
-    
+
     color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
   @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
@@ -100,6 +105,7 @@ export const ReceiptButton = styled.button`
     position: absolute;
     bottom: 55%;
     left: 57%;
+
     border-radius: 99px;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
   }
@@ -138,7 +144,7 @@ export const ReceiptButton = styled.button`
 
 export const LogoutButton = styled.button`
   font-size: 3rem;
-  padding-right: 10px;
+  padding-right: 1rem;
   align-self: end;
 
   background: none;
