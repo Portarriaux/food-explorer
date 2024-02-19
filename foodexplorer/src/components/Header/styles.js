@@ -4,16 +4,18 @@ import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 export const Container = styled.div`
   display: flex;
   height: 11.4rem;
-  width: 100vw;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 `;
 
 export const Navigate = styled.div`
   display: flex;
-  align-items: center;
   margin: auto;
-  gap: 7.4rem;
-  padding: 0 4rem;
+  gap: 7rem;
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
+    gap: 15rem;
+    display: flex;
+  }
 `;
 
 export const Menu = styled.button`
@@ -23,10 +25,10 @@ export const Menu = styled.button`
   color: ${({ theme }) => theme.COLORS.WHITE};
 
   > svg {
-    font-size: 2.4rem;
+    font-size: clamp(3.4rem, 8.5vh, 2.7rem);
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
     display: none;
   }
 `;
@@ -41,7 +43,7 @@ export const SearchBarContainer = styled.div`
     left: 7rem;
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
     display: none;
   }
 `;
@@ -62,22 +64,25 @@ export const SearchBarInput = styled.input`
     font-family: "Roboto";
     font-size: 1.6rem;
     font-weight: 400;
+    
     color: ${({ theme }) => theme.COLORS.GRAY_100};
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    display: none;
   }
 `;
 
 export const LogoHeader = styled.div`
   display: flex;
   align-items: center;
-  flex-shrink: 0;
   gap: 8px;
 
   > h1 {
     font-family: "Roboto";
-    font-style: normal;
-    line-height: normal;
-    font-size: 2.1rem;
+    font-size: clamp(2.5rem, 3.9vw, 2.8rem);
+
     font-weight: 700;
+    flex-shrink: 0;
   }
 `;
 
@@ -89,8 +94,8 @@ export const ReceiptButton = styled.button`
   color: ${({ theme }) => theme.COLORS.WHITE};
 
   .count {
-    height: 20px;
-    width: 20px;
+    height: 2rem;
+    width: 2rem;
 
     position: absolute;
     bottom: 55%;
@@ -100,15 +105,16 @@ export const ReceiptButton = styled.button`
   }
 
   svg {
-    font-size: 3.2rem;
+    font-size: clamp(4.5rem, 3.6vh, 4.3rem);
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
     width: 21.6rem;
     height: 5.6rem;
 
     padding: 1.2rem 3.2rem;
     display: flex;
+    align-items: center;
     gap: 8px;
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
@@ -134,12 +140,12 @@ export const LogoutButton = styled.button`
   font-size: 3rem;
   padding-right: 10px;
   align-self: end;
-  
+
   background: none;
   border: none;
   color: ${({ theme }) => theme.COLORS.WHITE};
-  
-  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
     display: none;
   }
 `;
