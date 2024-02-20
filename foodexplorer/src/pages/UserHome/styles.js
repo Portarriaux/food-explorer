@@ -51,7 +51,7 @@ export const LogoHome = styled.div`
     height: 22rem;
 
     align-items: center;
-    margin-top: 10.0rem;
+    margin-top: 10rem;
 
     img {
       height: 28rem;
@@ -79,12 +79,17 @@ export const Description = styled.div`
   margin-left: 2.4rem;
 
   font-family: "Poppins";
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
 
   color: ${({ theme }) => theme.COLORS.GRAY_300};
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    margin-right: 1.5rem;
+  }
 `;
 
 export const CardRef = styled.div`
