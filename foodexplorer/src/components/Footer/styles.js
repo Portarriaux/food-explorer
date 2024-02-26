@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
   width: 42.8rem;
@@ -15,6 +16,10 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
+    .logo-and-title {
+      display: flex;
+    }
+
   h2 {
     font-family: "Roboto";
     font-style: normal;
@@ -30,5 +35,11 @@ export const Container = styled.div`
   p {
     flex-shrink: 0;
     padding: 14px;
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around
   }
 `;

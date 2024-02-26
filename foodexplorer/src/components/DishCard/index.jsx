@@ -11,7 +11,7 @@ export function DishCard({
 }) {
   return (
     <Container>
-      {Icon && <Icon size={24} />}
+      {Icon && <Icon/>}
       <img src={imgSrc} alt={title} />
       <h3>{title}</h3>
       <p>

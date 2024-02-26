@@ -10,7 +10,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { DishCard } from "../../components/DishCard";
 import { PiHeartStraightBold } from "react-icons/pi";
-import logoHome from "../../assets/homeLogo.png";
+import banner from "../../assets/banner.png";
 import Prato_01 from "../../assets/prato_01.png";
 import Prato_02 from "../../assets/prato_02.png";
 import Prato_03 from "../../assets/prato_03.png";
@@ -22,7 +22,7 @@ export function UserHome() {
       <Header />
       <LogoHome>
         <picture>
-          <img src={logoHome} alt="Logo Home" />
+          <img src={banner} alt="Logo Home" />
         </picture>
 
         <div className="logo-info-home">
@@ -99,7 +99,7 @@ export function UserHome() {
           onIncrement={() => {}}
           onDecrement={() => {}}
           imgSrc={Dish}
-          alt={"Salada Suco de maracujá"}
+          alt={"Maracujá"}
         />
       </CardMainExtra>
 

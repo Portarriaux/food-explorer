@@ -13,10 +13,9 @@ export const LogoAndHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 
   margin: 7.3rem 6rem 0 0;
-
-  gap: 8px;
 
   > h1 {
     font-family: "Roboto";
@@ -53,7 +52,7 @@ export const Form = styled.form`
     margin: 0 auto;
 
     border-radius: 1.6rem;
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
     > h2 {
       margin-bottom: 3.2rem;
@@ -64,5 +63,4 @@ export const Form = styled.form`
       font-weight: 500;
     }
   }
-
 `;
