@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: 42.8rem;
   margin: 0 auto;
+  height: 100%;
+  padding: 0 5px;
 `;
 
 export const LogoHome = styled.div`
@@ -67,4 +69,5 @@ export const CardMain = styled.div`
 
 export const CardMainExtra = styled.div`
   display: flex;
+  margin-bottom: 2.4rem;
 `;

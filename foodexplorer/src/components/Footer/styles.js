@@ -1,20 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 42.8rem;
-    height: 7.7rem;
+  width: 42.8rem;
+  height: 7.7rem;
 
-    display: flex;
-    align-items: center;
-    padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
 
-    position: fixed;
-    bottom: 0;
+  position: sticky;
+  bottom: 0;
 
-    gap: 4px;
-    flex-shrink: 0;
+  flex-shrink: 0;
 
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   h2 {
     font-family: "Roboto";
@@ -29,7 +28,7 @@ export const Container = styled.div`
   }
 
   p {
-    margin-left: 15px;
     flex-shrink: 0;
+    padding: 14px;
   }
 `;
