@@ -22,9 +22,15 @@ export const LogoHome = styled.div`
   );
 
   img {
+<<<<<<< HEAD
     width: 19.1rem;
     min-height: 14.9rem;
     transform: translateY(-9%) translateX(-10%);
+=======
+    width: 191px;
+    min-height: 149px;
+    transform: translateY(-20%) translateX(-10%);
+>>>>>>> 5a67ca4 (Refatora UserHome - Atualiza imagem da logoHome e ajusta estilos responsivos)
   }
 
   .logo-info-home {
@@ -40,6 +46,10 @@ export const LogoHome = styled.div`
 
     p {
       font-family: "Roboto";
+<<<<<<< HEAD
+=======
+      font-size: 1.2rem;
+>>>>>>> 5a67ca4 (Refatora UserHome - Atualiza imagem da logoHome e ajusta estilos responsivos)
       font-style: normal;
       font-size: 1.2rem;
       font-weight: 400;
@@ -49,17 +59,30 @@ export const LogoHome = styled.div`
   }
 
   @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
+<<<<<<< HEAD
     min-width: 110rem;
     height: 22rem;
 
     align-items: center;
     margin-top: 10rem;
+=======
+    min-width: 120rem;
+    height: 26rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 5a67ca4 (Refatora UserHome - Atualiza imagem da logoHome e ajusta estilos responsivos)
 
     img {
       height: 28rem;
       width: auto;
 
+<<<<<<< HEAD
       transform: translateY(-10%) translateX(-12%);
+=======
+      transform: translateY(-4%) translateX(-48%);
+>>>>>>> 5a67ca4 (Refatora UserHome - Atualiza imagem da logoHome e ajusta estilos responsivos)
     }
 
     .logo-info-home {
@@ -70,8 +93,12 @@ export const LogoHome = styled.div`
       }
 
       p {
+<<<<<<< HEAD
         font-size: 2rem;
         max-width: 38rem;
+=======
+        font-size: 1.6rem;
+>>>>>>> 5a67ca4 (Refatora UserHome - Atualiza imagem da logoHome e ajusta estilos responsivos)
       }
     }
   }
