@@ -2,8 +2,11 @@ import styled from "styled-components";
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
-  display: flex;
+  max-width: 42.8rem;
   height: 11.4rem;
+
+  display: flex;
+  margin: auto;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 `;
 
@@ -84,11 +87,10 @@ export const LogoHeader = styled.div`
 
   > h1 {
     font-family: "Roboto";
+    font-style: normal;
+    line-height: normal;
+    font-size: 2.1rem;
     font-size: clamp(2.5rem, 3.9vw, 2.8rem);
-
-    font-weight: 700;
-    flex-shrink: 0;
-  }
 `;
 
 export const ReceiptButton = styled.button`

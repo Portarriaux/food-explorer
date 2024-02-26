@@ -39,7 +39,7 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 64px; 
+  padding: 64px;
 
   margin: 0 auto;
   padding-top: 7.3rem;

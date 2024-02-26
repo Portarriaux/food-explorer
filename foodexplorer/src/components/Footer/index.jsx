@@ -4,11 +4,13 @@ import logoFooter from "../../assets/footer.png.png";
 export function Footer() {
   return (
     <Container>
-      <div className="logo-and-title">
+
+      <div className="section-footer">
         <img src={logoFooter} alt="Logo" />
         <h2>food explorer</h2>
+        <p>© 2023 - Todos os direitos reservados.</p>
       </div>
-      <p>© 2023 - Todos os direitos reservados.</p>
+
     </Container>
   );
 }

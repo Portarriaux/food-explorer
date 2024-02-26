@@ -1,3 +1,8 @@
+
+import { Container, ReceiptButton, Navigate, LogoHeader, Menu } from "./styles";
+import { PiReceiptLight, PiListBold } from "react-icons/pi";
+import { SideMenu } from "../SideMenu";
+import React, { useState } from "react";
 import {
   Container,
   ReceiptButton,
@@ -10,14 +15,21 @@ import {
 } from "./styles";
 import { PiReceiptLight, PiListBold, PiSignOut } from "react-icons/pi";
 import { IoIosSearch } from "react-icons/io";
+
 import logo from "../../assets/logo.png";
 
 export function Header() {
+  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+
+  const toggleSideMenu = () => {
+    setIsSideMenuOpen(!isSideMenuOpen);
+  };
+
   return (
     <Container>
       <Navigate>
         <Menu>
-          <PiListBold />
+          <PiListBold onClick={toggleSideMenu} />
         </Menu>
 
         <LogoHeader>
@@ -39,6 +51,8 @@ export function Header() {
           <PiSignOut />
         </LogoutButton>
       </Navigate>
+
+      {isSideMenuOpen && <SideMenu onClose={toggleSideMenu} />}
     </Container>
   );
 }

@@ -5,11 +5,11 @@ import { ExitButton } from "../ExitButton";
 import { InputSearch } from "../InputSearch";
 import { Footer } from "../Footer";
 
-export function SideMenu() {
+export function SideMenu({ onClose }) {
   return (
     <Container>
       <HeaderMenu>
-        <button>
+        <button onClick={onClose}>
           <PiXBold />
         </button>
         <span>Menu</span>

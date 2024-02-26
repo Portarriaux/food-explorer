@@ -1,16 +1,16 @@
-import { Container, Form, LogoHeader } from "./styles";
+import { Container, Form, LogoAndHeader } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
-import logo from "../../assets/header.Logo.png";
+import newLogo from "../../assets/newLogo.png"
 
 export function SignUp() {
   return (
     <Container>
-      <LogoHeader>
-        <img src={logo} alt="Logo da aplicação" />
+      <LogoAndHeader>
+        <img src={newLogo} alt="Logo da aplicação" />
         <h1>fodd Explorer</h1>
-      </LogoHeader>
+      </LogoAndHeader>
 
       <Form>
         <h2>Crie sua conta</h2>
