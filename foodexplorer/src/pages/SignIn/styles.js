@@ -3,8 +3,6 @@ import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 export const Container = styled.div`
   height: 100vh;
 
-  
-
   @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
     display: flex;
     align-items: center;
