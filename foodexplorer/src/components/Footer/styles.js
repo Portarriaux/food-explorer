@@ -2,37 +2,41 @@ import styled from "styled-components";
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
-  width: 42.8rem;
-
-  margin-top: 8rem;
-
   .section-footer {
-    height: 7.7rem;
+    height: 3rem;
+    padding: 3rem;
+
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 1rem;
 
-    position: fixed;
-    bottom: 0;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
     flex-shrink: 0;
 
-  height: 7.7rem;
-
-  display: flex;
-  align-items: center;
-  padding-left: 5px;
-
-  position: sticky;
-  bottom: 0;
-
-  flex-shrink: 0;
-
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-
-
-    .logo-and-title {
+    .footer-container {
       display: flex;
+      gap: 1.0rem;
     }
-
+    
+    h2 {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
+    }
+    
+    img {
+      object-fit: cover;
+    }
+    
+    .logo-and-title {
+      padding-left: 9rem;
+    }
+    
+    @media (min-width: ${DEVICE_BREAKPOINTS.SM}) {
+      justify-content: space-around;
+    }
   }
+  
+
 `;
+

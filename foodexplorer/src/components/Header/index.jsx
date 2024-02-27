@@ -1,7 +1,3 @@
-
-import { Container, ReceiptButton, Navigate, LogoHeader, Menu } from "./styles";
-import { PiReceiptLight, PiListBold } from "react-icons/pi";
-import { SideMenu } from "../SideMenu";
 import React, { useState } from "react";
 import {
   Container,
@@ -13,9 +9,9 @@ import {
   SearchBarInput,
   LogoutButton,
 } from "./styles";
+import { SideMenu } from "../SideMenu";
 import { PiReceiptLight, PiListBold, PiSignOut } from "react-icons/pi";
 import { IoIosSearch } from "react-icons/io";
-
 import logo from "../../assets/logo.png";
 
 export function Header() {
