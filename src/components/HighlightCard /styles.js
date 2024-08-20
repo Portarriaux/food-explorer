@@ -3,6 +3,7 @@ export const Container = styled.div`
   margin: 16.4rem 12.4rem 0 12.4rem;
   height: 26rem;
   display: flex;
+
   align-items: center;
   background: ${({ theme }) => theme.COLORS.GRADIENT_200};
 
@@ -12,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const InfoSection = styled.div`
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
